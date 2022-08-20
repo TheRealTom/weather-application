@@ -7,9 +7,9 @@ Frontend solution of weather application.
 1. Clone repository
 2. Create `.env` file from `.envTemplate` and setup `SERVER_ADDRESS`, where the server is running
 
-```.env
-<!-- .env file -->
-<!-- eg. -->
+```js
+# .env file
+# eg.
 SERVER_ADDRESS='http://localhost:8080'
 ```
 
