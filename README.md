@@ -5,8 +5,8 @@ Gets weather situation of given city.
 ## Setup
 
 1. Clone repository
-2. Setup `.env` files
-3. Install [expo](https://docs.expo.dev/get-started/installation/)
+2. Install all dependencies via `npm`
+3. Setup `.env` files 
 
 (detailed setup in local README.md files)
 
@@ -21,7 +21,7 @@ Gets weather situation of given city.
 ```$ expo start```
 
 3. Write location into the input
-4. Congrats, you see screen with the location and tempreture you have typed in
+4. Congrats, you see screen of the desired location and temperature
 
 ## Technology
 
