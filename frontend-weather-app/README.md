@@ -5,7 +5,11 @@ Frontend solution of weather application.
 ## Setup
 
 1. Clone repository
-2. Create `.env` file from `.envTemplate` and setup `SERVER_ADDRESS`, where the server is running
+2. To install all packages, run command:
+ 
+```$ npm install```
+ 
+4. Create `.env` file from `.envTemplate` and setup `SERVER_ADDRESS`, where the server is running
 
 ```js
 # .env file

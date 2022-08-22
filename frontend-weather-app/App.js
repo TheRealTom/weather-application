@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, ImageBackground, Platform, SafeAreaView, View, ActivityIndicator } from 'react-native';
 
 import getImageForWeather from './utils/getImageForWeather';
-import { fetchLocationId, fetchWeather, fetchLocationWeather } from './utils/api';
+import { fetchLocationWeather } from './utils/api';
 
 import SearchInput from './components/SearchInput';
 
