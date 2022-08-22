@@ -13,6 +13,7 @@ const thunderLikeEnd = 799;
 // returns its name, temperature in celsius and weather situation
 export const fetchLocationWeather = async city => {
     // Request on server
+    // console.log(`${SERVER_ADDRESS}/locationWeather?city=${city}`)
     const response = await fetch (
         `${SERVER_ADDRESS}/locationWeather?city=${city}`
     )
@@ -22,19 +23,19 @@ export const fetchLocationWeather = async city => {
     const { temp } = main;
 
     // Determines weather name
-    const weatherDescription = capitalizeWords(weather[0].description);
-    const weatherName = determineWeatherName(weather[0].id,  weather[0].main, weatherDescription);
+    const weatherDescription = _capitalizeWords(weather[0].description);
+    const weatherName = _determineWeatherName(weather[0].id,  weather[0].main, weatherDescription);
 
     return {
         location: name,
         weather: weatherName,
-        temperature: convertKelvinToCelsius(temp)
+        temperature: _convertKelvinToCelsius(temp)
     };
 }
 
 // Some weather description are more precise then the weatherName
 // This function returns weatherName or weatherDescription or special weather occation
-function determineWeatherName(weatherId, weatherName, weatherDescription) {
+function _determineWeatherName(weatherId, weatherName, weatherDescription) {
     if (weatherOptions.includes(weatherDescription)) {
         return weatherDescription; 
     } else if (weatherId >= mistStart && weatherId <= mistEnd) {
@@ -47,7 +48,7 @@ function determineWeatherName(weatherId, weatherName, weatherDescription) {
 }
 
 // Capitalizes every word in string
-function capitalizeWords(stringOfWords) {    
+function _capitalizeWords(stringOfWords) {    
     let splitedString = stringOfWords.split(" ");
 
     for (let i = 0; i < splitedString.length; i++) {
@@ -57,6 +58,6 @@ function capitalizeWords(stringOfWords) {
     return splitedString.join(" ");
 }
 
-function convertKelvinToCelsius(temperature) {
+function _convertKelvinToCelsius(temperature) {
     return temperature + absoluteZeroKelvin;
 }
