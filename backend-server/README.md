@@ -4,9 +4,13 @@ Finds location weather information via Open Weather Map API.
 
 ## Setup
 
-1. Clone repository  to your PC 
-2. Get yourself an API key from [Open Weather Map](https://openweathermap.org/) and put it in .env
-3. Set `SERVER_PORT` on port you want the server to listen on and API key - `OPEN_WEATHER_MAPS_API_KEY`
+1. Clone repository
+2. To install all packages, run command:
+ 
+```$ npm install```
+
+3. Get yourself an API key from [Open Weather Map](https://openweathermap.org/) and put it in .env
+4. Set `SERVER_PORT` on port you want the server to listen on and API key - `OPEN_WEATHER_MAPS_API_KEY`
 
 ```js
 # .env file
