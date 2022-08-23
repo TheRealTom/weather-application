@@ -25,6 +25,10 @@ SERVER_PORT=8080
 
 ```$ npm run start```
 
+- run tests:
+
+```$ npm test```
+
 ## Technology
 
 - [Express JS](https://expressjs.com/)
@@ -33,3 +37,4 @@ SERVER_PORT=8080
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Node-Fetch](https://www.npmjs.com/package/node-fetch)
 - [NPM](https://www.npmjs.com/)
+- [JEST](https://jestjs.io/)

@@ -29,3 +29,4 @@ Gets weather situation of given city.
 - [Express JS](https://expressjs.com/)
 - [Expo](https://docs.expo.dev/)
 - [JavaScript](https://www.javascript.com/)
+- [JEST](https://jestjs.io/)

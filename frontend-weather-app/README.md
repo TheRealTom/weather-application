@@ -17,12 +17,19 @@ Frontend solution of weather application.
 SERVER_ADDRESS='http://localhost:8080'
 ```
 
-3. Start server via
+## Usage
+
+- start server:
 
 ```$ expo start```
+
+- run tests:
+
+```$ npm test```
 
 ## Technology
 
 - [React Native](https://reactnative.dev/)
 - [Node-Fetch](https://www.npmjs.com/package/node-fetch)
 - [Expo](https://docs.expo.dev/)
+- [JEST](https://jestjs.io/)
