@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     },
     textStyle: {
         textAlign: 'center',
-        fontFamily: Platform.OS === 'ios' ? 'AvenirNext-Regular' : 'Roboto',
+        fontFamily: Platform.OS === 'ios' ? 'AvenirNext-Regular' : 'Arial',
         color: 'white',
     },
     largeText: {
