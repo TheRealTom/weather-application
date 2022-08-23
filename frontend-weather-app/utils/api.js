@@ -1,10 +1,10 @@
 import {SERVER_ADDRESS} from "@env"
 
-const weatherOptions = ['Scattered Clouds', 'Sleet', 'Shower Rain', 'Light Rain']
+const handledWeatherDescriptions = ['Scattered Clouds', 'Sleet', 'Shower Rain', 'Light Rain']
 const absoluteZeroKelvin = - 273.15
 
 const mistStart = 701;
-const mistEnd = 762;
+const mistEnd = 770;
 const thunderLikeStart = 771;
 const thunderLikeEnd = 799;
 
@@ -35,8 +35,8 @@ export const fetchLocationWeather = async city => {
 
 // Some weather description are more precise then the weatherName
 // This function returns weatherName or weatherDescription or special weather occation
-function _determineWeatherName(weatherId, weatherName, weatherDescription) {
-    if (weatherOptions.includes(weatherDescription)) {
+export const _determineWeatherName = (weatherId, weatherName, weatherDescription) => {
+    if (handledWeatherDescriptions.includes(weatherDescription)) {
         return weatherDescription; 
     } else if (weatherId >= mistStart && weatherId <= mistEnd) {
         return 'Mist';
@@ -48,7 +48,7 @@ function _determineWeatherName(weatherId, weatherName, weatherDescription) {
 }
 
 // Capitalizes every word in string
-function _capitalizeWords(stringOfWords) {    
+export const _capitalizeWords = (stringOfWords) => {    
     let splitedString = stringOfWords.split(" ");
 
     for (let i = 0; i < splitedString.length; i++) {
@@ -58,6 +58,6 @@ function _capitalizeWords(stringOfWords) {
     return splitedString.join(" ");
 }
 
-function _convertKelvinToCelsius(temperature) {
+export const _convertKelvinToCelsius = (temperature) => {
     return temperature + absoluteZeroKelvin;
 }

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
+    "test": "node node_modules/jest/bin/jest.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web"
